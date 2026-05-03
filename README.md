@@ -25,6 +25,8 @@ data/
 ├── extracted_frames/
 └── annotations/
 
+---
+
 ### Optional: Frame Extraction from Videos
 
 The `preprocess_frames.py` script converts raw videos into individual image frames for model training. If you wish to redo this portion, feel free to do so, but it is not needed.
