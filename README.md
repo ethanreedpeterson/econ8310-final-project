@@ -7,18 +7,6 @@ The workflow converts raw videos into labeled image frames and trains a deep lea
 
 ---
 
-## File Descriptions
-
-```text
-econ8310-final-project/
-├── faster_rcnn_baseball.py      # Main training script for Faster R-CNN model
-├── preprocess_frames.py         # Extracts labeled frames from raw videos
-├── baseball_faster_rcnn.ipynb   # Interactive notebook used for development and experimentation
-├── README.md                    # Project documentation and instructions
-```
-
----
-
 ## Data
 
 The dataset is not stored directly in this repository because some video files, extracted frames, annotations, and model weights exceed GitHub's size limits.
@@ -36,7 +24,7 @@ After downloading, place them into a `data/` folder like this:
 data/
 ├── annotations/
 ├── extracted_frames/
-├── trained_model_weight/
+├── trained_weight/
 └── videos/
 
 ```
