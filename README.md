@@ -21,12 +21,13 @@ econ8310-final-project/
 
 ## Data
 
-The dataset is not stored directly in this repository because video files, extracted frames, and model weights exceed GitHub size limits.
+The dataset is not stored directly in this repository because some video files, extracted frames, annotations, and model weights exceed GitHub's size limits.
 
 Download the folders here:
 
 - **REQUIRED** [Extracted Frames](https://drive.google.com/drive/folders/10ScFJAOeN5-ik_oXK9Dp8kVTHYXFbTCT?usp=drive_link)
 - **REQUIRED** [Annotations](https://drive.google.com/drive/folders/182HfsQ6OKfHb5d8alKnpY3_7rCytZmDs?usp=drive_link)
+- **REQUIRED** [Trained Weight](https://drive.google.com/file/d/1M7Kyuet-RVBNXzw1N-hUfwEGCxORvBLw/view?usp=drive_link)
 - *OPTIONAL* [Videos](https://drive.google.com/drive/folders/1wPYL3HJvZJXgiG-Z6yjGY_TpNbUf008c?usp=drive_link)
 
 After downloading, place them into a `data/` folder like this:
@@ -35,7 +36,9 @@ After downloading, place them into a `data/` folder like this:
 data/
 ├── annotations/
 ├── extracted_frames/
+├── trained_model_weight/
 └── videos/
+
 ```
 
 Please note: The `videos/` folder is not required for model training if `extracted_frames/` is already available. It is only needed to regenerate frames using `preprocess_frames.py`, if you want to go that route.
