@@ -26,9 +26,9 @@ def run_inference():
         print(f"Created directory: {OUTPUT_DIR}")
 
     # Logic to rename output based on input
-    base_name = os.path.basename(INPUT_VIDEO)          # e.g. "test_pitch.mp4"
-    file_name = os.path.splitext(base_name)[0]         # e.g. "test_pitch"
-    output_filename = f"{file_name}_detected.mp4"      # e.g. "test_pitch_detected.mp4"
+    base_name = os.path.basename(INPUT_VIDEO)
+    file_name = os.path.splitext(base_name)[0]
+    output_filename = f"{file_name}_detected.mp4"
     output_path = os.path.join(OUTPUT_DIR, output_filename)
 
     print(f"Using device: {DEVICE}")
