@@ -24,6 +24,7 @@ data/
 ├── videos/
 ├── extracted_frames/
 └── annotations/
+```
 
 ---
 
@@ -35,3 +36,4 @@ Run it with:
 
 ```bash
 python preprocess_frames.py
+```
