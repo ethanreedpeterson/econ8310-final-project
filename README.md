@@ -9,9 +9,9 @@ The workflow converts raw videos into labeled image frames and trains a deep lea
 
 ## Data
 
-The dataset is not stored directly in this repository because some video files, extracted frames, annotations, and model weights exceed GitHub's size limits.
+The data is not stored directly in this repository because some video files, extracted frames, annotations, and model weights exceed GitHub's size limits.
 
-Download the folders here:
+Download the necessary data here:
 
 - **REQUIRED** [Extracted Frames](https://drive.google.com/drive/folders/10ScFJAOeN5-ik_oXK9Dp8kVTHYXFbTCT?usp=drive_link)
 - **REQUIRED** [Annotations](https://drive.google.com/drive/folders/182HfsQ6OKfHb5d8alKnpY3_7rCytZmDs?usp=drive_link)
