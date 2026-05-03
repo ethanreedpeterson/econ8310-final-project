@@ -1,8 +1,15 @@
 # econ8310-final-project
 
+## Overview
+
+This project uses a **Faster R-CNN (ResNet50 + Feature Pyramid Network)** model to detect baseballs in video footage.  
+The workflow converts raw videos into labeled image frames and trains a deep learning model to identify the baseball’s location in each frame.
+
+---
+
 ## Data
 
-The dataset is not stored directly in this GitHub repository because the video files, extracted frames, and model weights are too large for GitHub.
+The dataset is not stored directly in this repository because video files, extracted frames, and model weights exceed GitHub size limits.
 
 Download the required folders here:
 
