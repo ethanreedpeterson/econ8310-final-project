@@ -42,7 +42,7 @@ def augment_image_and_box(image, box):
         )
         image = rotated
 
-        # Only rotate the bounding box if there actually is a baseball in this frame!
+        # Only rotate the bounding box if there actually is a baseball in the frame
         if box is not None:
             xtl, ytl, xbr, ybr = box
             corners = np.array([[xtl, ytl], [xbr, ytl], [xbr, ybr], [xtl, ybr]], dtype=np.float32)
@@ -67,7 +67,7 @@ class BaseballDetectionDataset(Dataset):
         self.augment = augment
         self.samples = []
 
-        # Read the single, lightning-fast JSON file instead of parsing XMLs
+        # Read the JSON file instead of parsing XMLs
         json_path = os.path.join(self.frames_dir, "master_labels.json")
         with open(json_path, "r") as f:
             self.labels_dict = json.load(f)
@@ -203,7 +203,7 @@ if __name__ == "__main__":
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
 
-    # Initialize the dataset (No XML directory needed anymore!)
+    # Initialize the dataset (No XML directory needed)
     full_dataset = BaseballDetectionDataset(
         frames_dir="data/extracted_frames",
         augment=False
@@ -253,7 +253,7 @@ if __name__ == "__main__":
         model.train()
         running_loss = 0.0
 
-        # Create the progress bar!
+        # Create the progress bar
         progress_bar = tqdm(train_loader, desc=f"Epoch {epoch + 1}/{epochs}", dynamic_ncols=True, leave=False)
 
         for images, targets in progress_bar:
